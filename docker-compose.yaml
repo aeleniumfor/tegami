@@ -1,0 +1,9 @@
+version: '3.1'
+services:
+  db:
+    image: postgres:15.5-alpine3.18
+    environment:
+      POSTGRES_DB: tegami
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
